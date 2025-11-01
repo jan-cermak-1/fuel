@@ -1,0 +1,174 @@
+/* Design Tokens from Figma - Soul Design System */
+
+:root {
+  /* Colors - Layers */
+  --color-layer-main-navigation: #111114;
+  --color-layer-level-0: #f3f3f5;
+  --color-layer-level-1: #ffffff;
+  --color-layer-level-2: #f3f3f5;
+  --color-layer-level-3: #e7e7e7;
+  --color-layer-transparent: rgba(255, 255, 255, 0.01);
+  --color-layer-success: #dcfce4;
+  --color-layer-danger: #fee2e2;
+
+  /* Colors - On Layer */
+  --color-on-layer-primary: #24242b;
+  --color-on-layer-secondary: #505057;
+  --color-on-layer-tertiary: #9d9da0;
+  --color-on-layer-inverse: #f9f9fa;
+  --color-on-layer-success: #15a43e;
+  --color-on-layer-danger: #da2828;
+  --color-on-layer-warning: #9b5e0d;
+  --color-on-layer-interactive: #003beb;
+
+  /* Colors - Borders */
+  --color-border-primary: rgba(0, 0, 0, 0.2);
+  --color-border-default: #cececf;
+  --color-border-success: #85f0a3;
+  --color-border-success-emphasis: #20c54f;
+  --color-border-danger: #f67373;
+  --color-border-warning-emphasis: #f1c21b;
+
+  /* Colors - Buttons */
+  --color-button-inverse: rgba(255, 255, 255, 0);
+  --color-button-invisible: rgba(255, 255, 255, 0);
+  --color-button-danger: #da2828;
+  --color-button-primary: #0f62fe;
+
+  /* Colors - Deprecated/Corporate */
+  --color-corporate-cornflower-blue: #69bae8;
+  --color-corporate-purple: #485daa;
+  --color-corporate-dark-blue: #003a5d;
+  --color-interaction-danger: #da1e28;
+  --color-layout-gray-500: #d7d8d9;
+  --color-layout-gray-600: #a3a3a3;
+
+  /* Colors - Chart */
+  --color-chart-red: #f43636;
+
+  /* Colors - Loader */
+  --color-loader-skeleton: rgba(0, 0, 0, 0.05);
+
+  /* Colors - Scrollbar */
+  --color-scrollbar-thumb: #9d9da0;
+
+  /* Spacing */
+  --space-0: 0px;
+  --space-1: 3px;
+  --space-2: 6px;
+  --space-3: 9px;
+  --space-4: 12px;
+  --space-5: 18px;
+  --space-6: 24px;
+  --space-7: 30px;
+  --space-8: 36px;
+
+  /* Font Family */
+  --font-family-primary: 'Inter', sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: normal;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Font Sizes */
+  --font-size-small: 11px;
+  --font-size-medium: 13px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 30px;
+  --font-size-2xl: 36px;
+
+  /* Line Heights */
+  --line-height-small: 16px;
+  --line-height-medium: 18px;
+  --line-height-base: 24px;
+  --line-height-lg: 30px;
+  --line-height-xl: 42px;
+
+  /* Typography - Headline 1 */
+  --headline-1-font-family: 'Inter', sans-serif;
+  --headline-1-font-weight: 500;
+  --headline-1-font-size: 30px;
+  --headline-1-line-height: 42px;
+  --headline-1-letter-spacing: -0.021px;
+
+  /* Typography - Headline 2 */
+  --headline-2-font-family: 'Inter', sans-serif;
+  --headline-2-font-weight: 500;
+  --headline-2-font-size: 20px;
+  --headline-2-line-height: 30px;
+  --headline-2-letter-spacing: -0.017px;
+
+  /* Typography - Headline 3 */
+  --headline-3-font-family: 'Inter', sans-serif;
+  --headline-3-font-weight: 500;
+  --headline-3-font-size: 16px;
+  --headline-3-line-height: 24px;
+  --headline-3-letter-spacing: -0.011px;
+
+  /* Typography - Headline 4 */
+  --headline-4-font-family: 'Inter', sans-serif;
+  --headline-4-font-weight: 700;
+  --headline-4-font-size: 13px;
+  --headline-4-line-height: 18px;
+
+  /* Typography - Headline 5 */
+  --headline-5-font-family: 'Inter', sans-serif;
+  --headline-5-font-weight: 700;
+  --headline-5-font-size: 10px;
+  --headline-5-line-height: 12px;
+  --headline-5-letter-spacing: 0.01px;
+
+  /* Typography - Body Medium */
+  --body-medium-font-family: 'Inter', sans-serif;
+  --body-medium-font-weight: 400;
+  --body-medium-font-size: 13px;
+  --body-medium-line-height: 18px;
+
+  /* Typography - Body Medium Bold */
+  --body-medium-bold-font-family: 'Inter', sans-serif;
+  --body-medium-bold-font-weight: 700;
+  --body-medium-bold-font-size: 13px;
+  --body-medium-bold-line-height: 18px;
+
+  /* Typography - Body Small */
+  --body-small-font-family: 'Inter', sans-serif;
+  --body-small-font-weight: 400;
+  --body-small-font-size: 11px;
+  --body-small-line-height: 16px;
+  --body-small-letter-spacing: 0.005px;
+
+  /* Typography - Body Small Bold */
+  --body-small-bold-font-family: 'Inter', sans-serif;
+  --body-small-bold-font-weight: 700;
+  --body-small-bold-font-size: 11px;
+  --body-small-bold-line-height: 16px;
+  --body-small-bold-letter-spacing: 0.005px;
+
+  /* Typography - Supporting Helper */
+  --supporting-helper-font-family: 'Inter', sans-serif;
+  --supporting-helper-font-weight: 400;
+  --supporting-helper-font-size: 10px;
+  --supporting-helper-line-height: 12px;
+
+  /* Typography - Badge Label */
+  --badge-label-font-family: 'Inter', sans-serif;
+  --badge-label-font-weight: 700;
+  --badge-label-font-size: 10px;
+  --badge-label-line-height: 12px;
+  --badge-label-letter-spacing: 0.01px;
+
+  /* Border Radius */
+  --border-radius-medium: 6px;
+  --border-radius-large: 8px;
+  --border-radius-full: 999px;
+
+  /* Shadows */
+  --shadow-inner: inset 0px 0.25px 0px 0.25px rgba(0, 0, 0, 0.05), inset 0px 0px 1px 0px rgba(0, 0, 0, 0.05);
+  --shadow-drop-10: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  --shadow-drop-20: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  --shadow-drop-30: 0px 0px 0.5px 0px rgba(0, 0, 0, 0.3);
+  --shadow-widget: 0px 0px 0.5px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+

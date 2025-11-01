@@ -1,0 +1,101 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--color-layer-level-1);
+  border-bottom: 1px solid var(--color-border-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-8);
+}
+
+.header__left {
+  display: flex;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.header__headline {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.header__title {
+  font-family: var(--headline-2-font-family);
+  font-weight: var(--headline-2-font-weight);
+  font-size: var(--headline-2-font-size);
+  line-height: var(--headline-2-line-height);
+  letter-spacing: var(--headline-2-letter-spacing);
+  color: var(--color-on-layer-primary);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.header__badge {
+  background-color: var(--color-layer-level-1);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--border-radius-large);
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  justify-content: center;
+}
+
+.header__badge span {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--headline-5-font-size);
+  line-height: var(--headline-5-line-height);
+  letter-spacing: var(--headline-5-letter-spacing);
+  color: var(--color-on-layer-primary);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header__online-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.header__online-text {
+  text-transform: none;
+  font-weight: var(--font-weight-regular);
+}
+
+.header__right {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.header__divider {
+  width: 1px;
+  height: 18px;
+  background-color: var(--color-layout-gray-500);
+}
+
+.header__button {
+  background-color: var(--color-button-invisible);
+  border: none;
+  border-radius: var(--border-radius-medium);
+  padding: var(--space-3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 36px;
+  min-width: 36px;
+  transition: background-color 0.2s;
+}
+
+.header__button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.header__button img {
+  width: 18px;
+  height: 18px;
+}
+

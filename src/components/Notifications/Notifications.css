@@ -1,0 +1,284 @@
+.notifications {
+  width: 480px;
+  height: 100vh;
+  background-color: var(--color-layer-level-1);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 60px;
+  top: 0;
+  z-index: 900;
+}
+
+.notifications__header {
+  height: 60px;
+  border-bottom: 1px solid var(--color-border-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-5);
+}
+
+.notifications__header-left {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  flex: 1;
+}
+
+.notifications__title {
+  font-family: var(--headline-2-font-family);
+  font-weight: var(--headline-2-font-weight);
+  font-size: var(--headline-2-font-size);
+  line-height: var(--headline-2-line-height);
+  letter-spacing: var(--headline-2-letter-spacing);
+  color: var(--color-on-layer-primary);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.notifications__divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--color-border-primary);
+  margin: 0 var(--space-2);
+}
+
+.notifications__select {
+  background-color: var(--color-layer-level-1);
+  border-radius: var(--border-radius-medium);
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  cursor: pointer;
+}
+
+.notifications__select span {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--body-medium-font-size);
+  line-height: var(--body-medium-line-height);
+  color: var(--color-on-layer-primary);
+}
+
+.notifications__select img {
+  width: 18px;
+  height: 18px;
+}
+
+.notifications__header-right {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.notifications__action-button {
+  background-color: var(--color-button-invisible);
+  border: none;
+  border-radius: var(--border-radius-medium);
+  padding: var(--space-3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 36px;
+  min-width: 36px;
+  transition: background-color 0.2s;
+}
+
+.notifications__action-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.notifications__action-button img {
+  width: 18px;
+  height: 18px;
+}
+
+.notifications__list {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: var(--space-4);
+  position: relative;
+}
+
+.notification {
+  background-color: var(--color-layer-level-2);
+  border-radius: var(--border-radius-large);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.notification--read {
+  opacity: 0.7;
+}
+
+.notification__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  background-color: var(--color-layer-transparent);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--border-radius-full);
+  padding: var(--space-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification__icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.notification__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.notification__header-row {
+  display: flex;
+  gap: var(--space-5);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.notification__headline {
+  flex: 1;
+  font-family: var(--body-medium-bold-font-family);
+  font-weight: var(--body-medium-bold-font-weight);
+  font-size: var(--body-medium-bold-font-size);
+  line-height: var(--body-medium-bold-line-height);
+  color: var(--color-on-layer-primary);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification__time-row {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  padding-right: var(--space-7);
+  position: relative;
+}
+
+.notification__time {
+  font-family: var(--body-small-font-family);
+  font-weight: var(--body-small-font-weight);
+  font-size: var(--body-small-font-size);
+  line-height: var(--body-small-line-height);
+  letter-spacing: var(--body-small-letter-spacing);
+  color: var(--color-on-layer-secondary);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.notification__mark-read {
+  position: absolute;
+  left: 56px;
+  top: -6px;
+  background-color: var(--color-button-invisible);
+  border: none;
+  border-radius: var(--border-radius-medium);
+  padding: var(--space-2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 30px;
+  min-width: 30px;
+  transition: background-color 0.2s;
+}
+
+.notification__mark-read:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.notification__mark-read img {
+  width: 18px;
+  height: 18px;
+}
+
+.notification__message-area {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.notification__image {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+}
+
+.notification__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.notification__message {
+  flex: 1;
+  font-family: var(--body-small-font-family);
+  font-weight: var(--body-small-font-weight);
+  font-size: var(--body-small-font-size);
+  line-height: var(--body-small-line-height);
+  letter-spacing: var(--body-small-letter-spacing);
+  color: var(--color-on-layer-secondary);
+  margin: 0;
+}
+
+.notifications__scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 12px;
+  padding: var(--space-1);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.notifications__scrollbar-track {
+  width: 6px;
+  height: 100%;
+  border-radius: var(--border-radius-full);
+  background-color: transparent;
+}
+
+.notifications__scrollbar-thumb {
+  width: 6px;
+  height: 120px;
+  background-color: var(--color-scrollbar-thumb);
+  border-radius: var(--border-radius-full);
+}
+
+.notifications__list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.notifications__list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.notifications__list::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: var(--border-radius-full);
+}
+
+.notifications__list::-webkit-scrollbar-thumb:hover {
+  background: var(--color-on-layer-secondary);
+}
+
