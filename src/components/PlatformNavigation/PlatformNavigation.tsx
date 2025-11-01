@@ -32,6 +32,8 @@ const navItems: NavItem[] = [
   { id: 'agent', label: 'Agent', icon: agentIcon },
 ];
 
+// Note: Community and UCG icons were not available from Figma server
+
 const PlatformNavigation: React.FC = () => {
   return (
     <div className="platform-navigation">
